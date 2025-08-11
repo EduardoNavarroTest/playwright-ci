@@ -16,6 +16,8 @@ test.describe("Login Tests", () => {
         await page.getByRole('textbox', { name: 'Password' }).fill('secret_sauce');
         await page.getByRole('button', { name: 'Login' }).click();
 
+        console.log(`Base URL: ${URL}`);
+
     });
 
 
