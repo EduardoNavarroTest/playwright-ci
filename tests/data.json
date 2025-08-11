@@ -1,0 +1,45 @@
+{
+    "environments": [
+      {
+        "name": "qa",
+        "variables": [
+          {
+            "name": "BASE_URL",
+            "value": "https://qa.example.com",
+            "type": "string"
+          },
+          {
+            "name": "USERNAME",
+            "value": "admin_qa",
+            "type": "string"
+          },
+          {
+            "name": "PASSWORD",
+            "value": "qa_password123",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "name": "dev",
+        "variables": [
+          {
+            "name": "BASE_URL",
+            "value": "https://dev.example.com",
+            "type": "string"
+          },
+          {
+            "name": "USERNAME",
+            "value": "admin_dev",
+            "type": "string"
+          },
+          {
+            "name": "PASSWORD",
+            "value": "dev_password123",
+            "type": "string"
+          }
+        ]
+      }
+    ]
+  }
+  
