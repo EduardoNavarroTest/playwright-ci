@@ -17,8 +17,17 @@ jobs:
       run: npm ci
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
+
+    # Paso para depurar y encontrar la ruta real del test
+    - name: Debug - List files
+      run: |
+        pwd
+        ls -R
+
+    # Ejecuta el test — AJUSTA la ruta cuando la sepas
     - name: Run Playwright tests
       run: npx playwright test tests/basic-test.spec.ts
+
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
