@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 
-test.describe("Login Tests SPRCOnline", () => {
+test.describe("Login Tests", () => {
 
     const URL: string = "https://www.saucedemo.com";
 
